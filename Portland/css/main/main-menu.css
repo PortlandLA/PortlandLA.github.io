@@ -1,0 +1,23 @@
+.main-menu {
+height: 25px;
+width: 600px;
+color:  #343e5b;
+margin-left:95px;
+margin-top:-19px;
+padding:15px;
+}
+.main__items {
+display: inline-block;	
+padding: 15px;
+font-size:15px; 
+color:  #b9bed1;
+margin-top:5px;
+
+}
+.main__items-b {
+color:  #343e5b;
+display: inline-block;	
+padding: 15px;
+font-size:15px; 
+margin-top:5px;
+}

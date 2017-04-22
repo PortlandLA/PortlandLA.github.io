@@ -1,0 +1,12 @@
+.header__sing-in {
+border-radius: 16px;
+border-width: 2px;
+border-color:  #e3e8f0;
+border-style: solid;
+width: 81px;
+height: 28px;
+position:absolute;
+top:3%; 
+margin-left:80px; 
+background-color: transparent; 
+}

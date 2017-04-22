@@ -1,0 +1,46 @@
+div.offer {
+background: url(Placeholder.jpg);
+width: 1400px;
+height: 500px;
+position:absolute; 
+}
+.offer__info {
+	width:489px;
+	height: 312px;
+}
+.offer__h1 {
+width: 350px;
+height: 86px;
+margin-left: 213px;
+margin-top: 103px;
+color:  #ffffff;
+font-size: 47px;
+font-weight: bold;
+}
+.offer__p {
+width: 461px;
+height: 65px;
+margin-left: 210px;
+margin-top: 40px;
+color:  #ffffff;
+font-family: 'Crimson Text', serif;	
+}
+.offer__btn {
+border-radius: 21px;
+background-color:#2754eb;
+border-style: none;
+width: 165px;
+height: 42px;
+margin-left: 200px;
+margin-top: 40px;
+color: #ffffff;
+font-size:12px;
+}
+.offer__info a {
+color: #ffffff;
+font-size:12px;
+}
+.offer__iphone {
+margin-left: 790px;
+margin-top: -500px;
+}

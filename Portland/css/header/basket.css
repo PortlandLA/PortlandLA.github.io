@@ -1,0 +1,30 @@
+.header__cart {
+	height: 36px;
+	width: 80px;
+	margin-top: -26px;
+	margin-left: 1100px;
+
+}
+.CartIcon {
+margin-left: -25px;
+margin-top: -36px;
+}
+.header__cart-text {
+width: 64px;
+height: 23px;
+font-size:13px;
+font-family: Montserrat;
+margin-top: -20px;
+
+}
+.header__sum {
+font-family: Montserrat;
+border-radius: 12px;
+background-color:  #e3e8f0;
+width: 20px;
+height: 20px;
+margin-left: 40px;
+margin-top: -26px;
+text-align: center;
+font-size:13px;
+}

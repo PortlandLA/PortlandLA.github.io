@@ -1,0 +1,30 @@
+  .main__search {
+  	height: 25px;
+  	width: 130px;
+  	margin-left:1060px;
+  	margin-top:-40px;
+border-left: 2px solid #f0f2f7;;
+border-right:  2px solid #f0f2f7;;
+background: ;
+padding:15px; 
+  }
+  .main__search__input {
+    border: 0px solid #000; /* Параметры рамки */
+    min-height: 20px; /* Минимальная высота */
+
+
+   }
+   .search {
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 120px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+    margin-top:-40px;
+    margin-left:10px; 
+
+   }
+   .searchIcon {
+   	margin-left:-10px; 
+
+   }

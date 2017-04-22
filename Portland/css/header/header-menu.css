@@ -1,0 +1,13 @@
+.header__menu {
+width: 500px;
+height: 33px;
+font-family: 'Montserrat', sans-serif;
+margin-left: 419px;
+margin-top:-32px; 
+}
+.header__items {
+display: inline-block;	
+padding: 5px;
+font-size:15px; 
+color:  #343e5b;
+}
