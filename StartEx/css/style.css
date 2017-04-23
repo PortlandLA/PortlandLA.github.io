@@ -11,13 +11,16 @@ height: 813px;
 margin:0 auto;
 
 }
+video {
+   width: 100%;
+}
 
 #overlay{
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
+   height: 85%;
    z-index: 10;
    background: url('VideoIcon.svg') 50% 50% no-repeat; 
    text-align: center;  
@@ -35,7 +38,7 @@ height: 50px;
 border-radius: 3px;
 background-color:  #ff6d6d;
 border-style: none;
-margin-top: 8%;
+margin-top: 6%;
 }
 #overlay.o{
  background: none;
@@ -46,7 +49,7 @@ color:  #ffffff;
 font-weight: 400;	
 }
 #overlay  .overlay__comment {
-position: relative;
+
 color:  rgba(40, 40, 40, 0.56);
 font-weight: 400;
 font-family: 'Exo', sans-serif;
@@ -54,13 +57,16 @@ font-size:14px;
 }
 .new-desing {
 	width: 1440px;
-	height: 724px;		
+	height: 697px;		
 	margin:0 auto;
+   
 
 }
 .new-desing__desing-text {
 	width: 588px;
-	height: 383px;   
+	height: 383px;
+   padding-left: 200px;
+   padding-top: 100px;
    
 }
 .new-desing__desing-text h4 {
@@ -88,9 +94,9 @@ font-size: 30px;
 }
 .new-desing .new-desing__img {
 width: 568px;
-height: 724px;
-float:right; 
-margin-top: -399px;
+height: 724px; 
+margin-top: -410px;
+margin-left: 902px;
 }
 .new-desing img {
 width: 538px;
@@ -98,11 +104,9 @@ height: 724px;
 }
 .features {
    width: 1440px;
-   height: 675px;   
-   position:relative;
-   top:1507px;
-   left:10%;
-   background: url() ;
+   height: 675px;  
+   margin:0 auto;
+   background: url(backdrop.jpg) no-repeat;
    }
 .features__pen {
 width: 291px;
