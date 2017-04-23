@@ -10,7 +10,7 @@ display: block;
 padding-top: 20px;
 display: block;
 font-size: 13px;
-
+box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
 
 }
 
@@ -28,15 +28,12 @@ img {
 height: 120px;
 width: 200px;
 }
-
 .block {
-float:button;
-width: 234px;
-height: 155px;
+width: 218px;
+height: 145px;
 box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
-margin:10px;
 }
 .Prechu {
-	height: 120px;
-	width: 100px;
+height: 120px;
+width: 100px;
 }
