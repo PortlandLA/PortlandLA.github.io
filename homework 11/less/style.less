@@ -1,31 +1,94 @@
+@height-mask: 250px;
+
+// To regulate alpha is recommended to use gray scale.
+// Recomiendo utilizar escala de grises
+
+@darken: 60%;
+
+@color: rgb(255,255,255);
+@color-alpha: darken( $color, $darken );
+
+// Apply color here!
+// Todo el color que quieras!
+@color-base: rgb(0,0,0);
+
 .box {
-	transition: all 1s;
+	
 width: 650px;
 height: 350px;	
 background: url(../img/photo.jpg)no-repeat center;
 background-size: cover;
  margin: 30px auto;
+ position: relative;
+
+}
+
+svg {
+width: 650px;
+height: 350px;
+ position: absolute;
+ top: 0;
+ left: 0;
+
+}
+svg line {
+    stroke-width: 10;
+    stroke:  #FFD700;
+    fill: none;
+    stroke-dasharray: 500;
+    -webkit-transition: -webkit-transform .6s ease-out;
+    transition: transform .6s ease-out;
+}
+div:hover svg line {
+    -webkit-transform: translateX(-400px);
+    transform: translateX(-400px);
+}
+	div:hover svg line.top {
+  -webkit-transform: translateX(-500px);
+  transform: translateX(-500px);
+
+} 
+
+div:hover svg line.bottom {
+  -webkit-transform: translateX(400px);
+  transform: translateX(500px);
+
+}
+
+ 
+
+div:hover svg line.left {
+  -webkit-transform: translateY(400px);
+  transform: translateY(400px);
+
+}
+
+div:hover svg line.right {
+  -webkit-transform: translateY(-400px);
+  transform: translateY(-400px);
+
 }
 .wrap {
-	width: 100%;
-	height: 100%;
+
+ transition: all 2s;
+width: 100%;
+height: 100%;
 display: block;
 line-height: 350px;
 text-align: center;
-background-color: grey;
-opacity: 0;
-&:hover {
-opacity:0.5;	
-}
-}
-
-a {
+opacity:0;
+margin:0 auto;
+&:hover,  a{
+opacity:1;
+width: 80%;
+height: 80%;
+transform: rotate(360deg) ;	
+margin:0 auto;
 color:black;
+}
 
 }
-a:focus{
-	color:blue;
-	
+
+a:focus{	
+	color:#6495ED;
 }	
-
-}
