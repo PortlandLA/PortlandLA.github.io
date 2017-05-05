@@ -120,20 +120,29 @@ html {
   }
 }
 @media (min-width: 541px) and (max-width: 786px) {
+  .header-logo {
+  max-width: 390px;
+  max-height: 65px;
+
+  }
   .header-money img {
     display: none;
   }
   .header-advantages__text li {
-    margin: 0 5% auto;
+    
+    margin-right: auto;
   }
   .header-advantages__form {
-    margin: 0 10% auto;
+     margin:0 auto
+   
   }
   .vantage {
     margin: 0 35% auto;
+  max-width: 250px;
+  max-height: 230px;
   }
   .vantage p {
-    margin: 0 -10px auto;
+    margin-right: auto;
   }
 }
 /**header set**/
