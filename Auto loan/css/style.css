@@ -120,30 +120,29 @@ html {
   }
 }
 @media (min-width: 541px) and (max-width: 786px) {
-  .header-logo {
-  max-width: 390px;
-  max-height: 65px;
-
-  }
   .header-money img {
     display: none;
   }
-  .header-advantages__text li {
-    
-    margin-right: auto;
+  .header {
+    width: 100vh;
   }
-  .header-advantages__form {
-     margin:0 auto
-   
+  .header-top{
+    margin:0 auto;
   }
-  .vantage {
-    margin: 0 35% auto;
-  max-width: 250px;
-  max-height: 230px;
+  .header-logo-numb {
+     
   }
-  .vantage p {
-    margin-right: auto;
+  .header-stock {
+   margin:0 auto;
+   width: 100vh; 
   }
+.vant {
+  margin:0 auto;
+   width: 100vh; 
+}
+.vantag {
+  margin:35rem 30rem auto;
+}
 }
 /**header set**/
 .header {
