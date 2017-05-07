@@ -106,7 +106,7 @@
 	$('.home-new').toggleClass('home-new home')	
 	});	
 		var btn = $('.user-btn');
-	    btn.click(function(){		
+	    btn.click(function(event){		
 		var userName = $('.user-name').val();
 		var userPhone = $('.user-email').val();
 		var userEmail = $('.user-pass').val();
@@ -115,6 +115,7 @@
 			form.submit();
 		} else {
 			alert('Введите имя,email и номер');
+            event.preventDefault();
 		}
 	});
 	});
