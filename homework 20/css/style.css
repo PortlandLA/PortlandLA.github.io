@@ -94,6 +94,6 @@ li {
   border-radius: 50%;
   display: inline-block;
 }
-.else span span:hover {
+.else span:hover {
   background-color: grey;
 }
