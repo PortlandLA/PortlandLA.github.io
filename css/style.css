@@ -73,7 +73,7 @@ form a:hover {
   border-radius: 50%;
   display: inline-block;
 }
-.menu span:hover {
+.menu .else span:hover {
   background-color: grey;
 }
 .logo {
