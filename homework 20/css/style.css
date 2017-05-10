@@ -12,4 +12,40 @@ header {
 }
 .content {
   margin-top: 11.3rem;
+  line-height: 4rem;
+}
+.icon-play {
+  padding: 4rem;
+}
+form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  aling-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+form input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e3e3e3;
+  background-color: #ffffff;
+  width: 170px;
+  height: 29px;
+  padding-left: 2rem;
+}
+form a {
+  background-color: #1abc9c;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: white;
+}
+form a:hover {
+  text-decoration: none;
+}
+.comment {
+  padding-top: 5rem;
 }
