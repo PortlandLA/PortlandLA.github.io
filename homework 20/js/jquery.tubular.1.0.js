@@ -135,7 +135,6 @@
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     // create plugin
-
     $.fn.tubular = function (options) {
         return this.each(function () {
             if (!$.data(this, 'tubular_instantiated')) { // let's only run one
