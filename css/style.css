@@ -1,39 +1,99 @@
-body {
-background: #F5F5F5;
-box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
-font-family: 'Montserrat', sans-serif;
-
-
+* {
+  margin: 0;
 }
-.main {
-padding-top: 20px;
-display: block;
-font-size: 13px;
-padding-bottom: 30px;
-
+html {
+  font-size: 10px;
 }
-
-.text-center {
-text-align: center;
-
+div {
+  display: block;
 }
-a:hover, 
-a:visited, 
-a:focus { 
-text-decoration: none;
-color:#1E90FF;
+/** color **/
+/** setting style**/
+header {
+  text-align: center;
+  color: white;
 }
-img {
-height: 120px;
-width: 200px;
+.content {
+  margin-top: 11.3rem;
+  line-height: 4rem;
 }
-.block {
-width: 218px;
-height: 145px;
-box-shadow: 0px 0px 30px 0px rgba(219, 219, 219, 1);
-display: inline-block;
+.icon-play {
+  padding: 4rem;
 }
-.Prechu {
-height: 120px;
-width: 100px;
+form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  aling-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+form input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e3e3e3;
+  background-color: #ffffff;
+  width: 170px;
+  height: 29px;
+  padding-left: 2rem;
+}
+form a {
+  background-color: #1abc9c;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: white;
+}
+form a:hover {
+  text-decoration: none;
+}
+.comment {
+  padding-top: 5rem;
+}
+.comment a {
+  color: #5ebd85;
+}
+#tubular-container {
+  height: 82% !important;
+}
+.nav {
+  margin-top: 7rem;
+  height: 50px;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.7);
+}
+.menu {
+  padding-left: 10rem;
+}
+.menu .else span {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #a69999;
+  border-radius: 50%;
+  display: inline-block;
+}
+.menu span:hover {
+  background-color: grey;
+}
+.logo {
+  height: 31px;
+  width: 65px;
+  padding-top: 0.5rem;
+  padding-left: 4rem;
+}
+ul {
+  width: 529px;
+}
+li {
+  display: inline-block;
+  padding-top: 1.5rem;
+  margin-right: 1rem;
+}
+.iconf,
+.icont {
+  padding-top: 2rem;
+}
+.iconf {
+  margin-right: 0.5rem;
 }
