@@ -7,7 +7,19 @@ html {
 div {
   display: block;
 }
-/** color **/
+/** fonts **/
+.reg {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+.light {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
 /** setting style**/
 header {
   text-align: center;
@@ -16,6 +28,21 @@ header {
 .content {
   margin-top: 11.3rem;
   line-height: 4rem;
+}
+.content h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.content h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.content h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 .icon-play {
   padding: 4rem;
@@ -39,29 +66,43 @@ form input {
   width: 170px;
   height: 29px;
   padding-left: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 form a {
   background-color: #1abc9c;
   padding: 0.4rem;
   text-decoration: none;
   color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 form a:hover {
   text-decoration: none;
 }
 .comment {
   padding-top: 5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
 }
 .comment a {
   color: #5ebd85;
 }
 #tubular-container {
-  height: 82% !important;
+  height: 62% !important;
+  position: absolute !important;
 }
 .nav {
-  margin-top: 7rem;
+  margin-top: 3.5rem;
   height: 50px;
+  width: 100%;
   box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: inline-block;
+  z-index: 1;
 }
 .nav .else span {
   width: 1rem;
@@ -70,27 +111,117 @@ form a:hover {
   border-radius: 50%;
   display: inline-block;
 }
+.nav .else span:hover {
+  background-color: grey;
+}
 .menu {
   padding-left: 10rem;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .logo {
   height: 31px;
   width: 65px;
-  padding-top: 0.5rem;
-  padding-left: 4rem;
 }
 ul {
   width: 529px;
 }
 li {
   display: inline-block;
-  padding-top: 1.5rem;
   margin-right: 1rem;
+  color: #a69999;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.social {
+  margin-top: 3px;
+  padding-top: 1.2rem;
+  height: 46px;
+  border-left: 1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+  width: 120px;
+  padding-left: 1.7rem;
 }
 .iconf,
 .icont {
-  padding-top: 2rem;
+  margin-right: 0.5rem;
 }
 .iconf {
-  margin-right: 0.5rem;
+  color: #3b5998;
+}
+.icont {
+  color: #00aced;
+}
+main {
+  padding-top: 10rem;
+}
+.main-text {
+  margin-top: 2rem;
+  text-align: center;
+}
+.main-text h3 {
+  color: #a5a5a5;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin-left: -6em;
+}
+.main-text h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  margin-left: -2.1em;
+}
+.main-text span {
+  color: #13bd9d;
+}
+.smile {
+  padding-left: 5.3rem;
+  color: #4c4c4c;
+}
+.features-left,
+.features-middle,
+.features-right {
+  display: block;
+  width: 335px;
+  height: 318px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.features-left img,
+.features-middle img,
+.features-right img,
+.features-left h3,
+.features-middle h3,
+.features-right h3 {
+  margin-bottom: 2rem;
+}
+.features-left h3,
+.features-middle h3,
+.features-right h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.features-left p,
+.features-middle p,
+.features-right p {
+  color: #939598;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
