@@ -1,3 +1,6 @@
+* {
+box-sizing: padding-box;	
+}
 html {
 font-size:10px;	
 }
@@ -6,9 +9,9 @@ display: block;
 }
 
 /** header **/
+
 header {
 width: 100%;
-margin: 0 auto;
 text-align:center;	
 }
 .logo {
@@ -33,7 +36,8 @@ padding-right:30px;
 .offer {
 background-color: #54a3da;
 height: 843px;
-
+width: 100%;
+display: inline-block;
 }
 .layer img{
 width: 56px;
@@ -41,25 +45,38 @@ height: 32px;
 }
 .layer:nth-child(1) img {
     position: absolute;
-    display: inline-block;
+    left:20rem;
     top: 10rem;
-    left: 20rem;
+    
 }
 .layer:nth-child(2) img {
     position: absolute;
-    display: inline-block;
+    left:20rem;
     top: 70rem;
-    left: 30rem;
+   
 }
 .layer:nth-child(3) img {
     position: absolute;
-    display: inline-block;
+    left:150rem;
     top: 10rem;
-    left: 150rem;
+    
 }
 .layer:nth-child(4) img {
     position: absolute;
-    display: inline-block;
+    left:150rem;
     top: 75rem;
-    left: 140rem;
+    
+}
+.header-offer {
+padding-top: 30rem;
+padding-left: 30rem;
+
+p {
+float: left;
+span {
+border-radius: 5px;
+background-color:  #ffce54;
+padding: 5px;
+}
+}
 }

@@ -1,3 +1,6 @@
+* {
+  box-sizing: padding-box;
+}
 html {
   font-size: 10px;
 }
@@ -7,7 +10,6 @@ div {
 /** header **/
 header {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 .logo {
@@ -31,6 +33,8 @@ header {
 .offer {
   background-color: #54a3da;
   height: 843px;
+  width: 100%;
+  display: inline-block;
 }
 .layer img {
   width: 56px;
@@ -38,25 +42,33 @@ header {
 }
 .layer:nth-child(1) img {
   position: absolute;
-  display: inline-block;
-  top: 10rem;
   left: 20rem;
+  top: 10rem;
 }
 .layer:nth-child(2) img {
   position: absolute;
-  display: inline-block;
+  left: 20rem;
   top: 70rem;
-  left: 30rem;
 }
 .layer:nth-child(3) img {
   position: absolute;
-  display: inline-block;
-  top: 10rem;
   left: 150rem;
+  top: 10rem;
 }
 .layer:nth-child(4) img {
   position: absolute;
-  display: inline-block;
+  left: 150rem;
   top: 75rem;
-  left: 140rem;
+}
+.header-offer {
+  padding-top: 30rem;
+  padding-left: 30rem;
+}
+.header-offer p {
+  float: left;
+}
+.header-offer p span {
+  border-radius: 5px;
+  background-color: #ffce54;
+  padding: 5px;
 }
