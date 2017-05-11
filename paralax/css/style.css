@@ -7,10 +7,36 @@ html {
 div {
   display: block;
 }
+/** fonts **/
+.reg {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+.light {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.lighti {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.med {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+.bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.nunito {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
 /** header **/
 header {
   width: 100%;
-  text-align: center;
+  overflow-x: hidden;
 }
 .logo {
   display: inline-block;
@@ -19,13 +45,22 @@ header {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
 }
 .logo .app {
   color: #65aada;
 }
+.logo i {
+  color: #ffcf54;
+}
 .nav li {
   display: inline-block;
   padding-right: 10px;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 .nav li:nth-child(2) {
   padding-right: 30px;
@@ -33,42 +68,118 @@ header {
 .offer {
   background-color: #54a3da;
   height: 843px;
-  width: 100%;
+  width: 100vw;
   display: inline-block;
-}
-.layer img {
-  width: 56px;
-  height: 32px;
 }
 .layer:nth-child(1) img {
   position: absolute;
-  left: 20rem;
-  top: 10rem;
+  left: 100rem;
+  top: 9.3rem;
 }
 .layer:nth-child(2) img {
   position: absolute;
   left: 20rem;
-  top: 70rem;
+  top: 10rem;
 }
 .layer:nth-child(3) img {
   position: absolute;
-  left: 150rem;
-  top: 10rem;
+  left: 20rem;
+  top: 70rem;
 }
 .layer:nth-child(4) img {
   position: absolute;
   left: 150rem;
+  top: 10rem;
+}
+.layer:nth-child(5) img {
+  position: absolute;
+  left: 150rem;
   top: 75rem;
+}
+.layer:nth-child(6) img {
+  position: absolute;
+  left: 80rem;
+  top: 73rem;
+}
+.layer:nth-child(7) img {
+  position: absolute;
+  left: 60rem;
+  top: 60rem;
+}
+.layer:nth-child(8) img {
+  position: absolute;
+  left: 10rem;
+  top: 40rem;
+}
+.layer:nth-child(9) img {
+  position: absolute;
+  left: 170rem;
+  top: 40rem;
+}
+.layer:nth-child(10) img {
+  position: absolute;
+  left: 60rem;
+  top: 20rem;
 }
 .header-offer {
   padding-top: 30rem;
-  padding-left: 30rem;
+  padding-left: 20rem;
+  color: white;
+}
+.header-offer h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 5.2rem;
+  margin-bottom: 1rem;
+}
+.header-offer h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 .header-offer p {
-  float: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
 }
 .header-offer p span {
   border-radius: 5px;
   background-color: #ffce54;
   padding: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.header-offer form input {
+  text-align: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  width: 423px;
+  height: 54px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.header-offer a {
+  border-radius: 5px;
+  background-color: #77c344;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.part {
+  height: 158px;
+  line-height: 15rem;
+  background: #f8f8f8;
+  margin-top: -1rem;
+  position: relative;
+  z-index: 1;
 }
