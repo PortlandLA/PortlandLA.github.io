@@ -30,114 +30,7 @@ div {
   font-weight: 400;
 }
 /** settings **/
-.one {
-  height: 769px !important;
-  overflow: hidden;
-}
-.сountdown {
-  padding-left: 25rem;
-  padding-top: 10rem;
-}
-.time {
-  text-align: center;
-  border-radius: 20px;
-  border-width: 2px;
-  border-color: #90d23d;
-  border-style: solid;
-  width: 968px;
-  height: 194px;
-  padding-top: 1.5rem;
-}
-.logo {
-  padding-left: 22rem;
-  padding-top: 5rem;
-}
-.nav {
-  padding-top: 7rem;
-}
-.nav li {
-  display: inline-block;
-  padding-right: 5rem;
-  font-size: 1.5rem;
-  opacity: 0.7;
-  text-transform: uppercase;
-}
-.nav li a {
-  text-decoration: none;
-  color: white;
-}
-.form {
-  width: 431px;
-  height: 530px;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 60%;
-  top: 60%;
-}
-.form h3 {
-  padding-top: 2rem;
-  margin-bottom: 5rem;
-}
-.form button,
-.form input {
-  width: 371px;
-  height: 53px;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #bebebe;
-}
-.form input {
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  margin-bottom: 2rem;
-  color: #6c6c6c;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1.8rem;
-  padding-left: 2rem;
-}
-.form input:hover {
-  border-color: #91d33b;
-}
-.form button {
-  background-color: #90d23d;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-}
-.form p {
-  padding-top: 2rem;
-  color: #6c6c6c;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-.header_icon {
-  padding-left: 20rem;
-  padding-top: 22rem;
-}
-.header_icon #icon1 {
-  padding-top: 1rem;
-}
-.header_icon #icon2 {
-  padding-bottom: 0.2rem;
-}
-.header_icon #icon3 {
-  padding-bottom: 0.5rem;
-}
-.header_icon #icon4 {
-  padding-bottom: 1rem;
-}
-.header_icon #icon5 {
-  padding-bottom: 2rem;
-}
+
 /** section_event-details **/
 .event {
   color: black;
@@ -325,7 +218,7 @@ div {
 }
 .non-report {
   display: none;
-}
+} 
 .maps .report .messege-form {
   display: inline-block;
   float: right;
