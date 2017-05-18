@@ -296,9 +296,6 @@ div {
   left: 23%;
   top: 360%;
 }
-.maps .report .non-report {
-  display: none !important;
-}
 .maps .report .addres {
   width: 294px;
   height: 352px;
@@ -325,6 +322,9 @@ div {
   opacity: 1;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+.non-report {
+  display: none;
 }
 .maps .report .messege-form {
   display: inline-block;
@@ -372,4 +372,16 @@ div {
   font-weight: 400;
   font-size: 2.2rem;
   padding: 0rem;
+}
+.footer {
+  background-color: #90d23d;
+  height: 220px;
+  padding-top: 5rem;
+}
+.footer h3 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding-top: 2rem;
 }
