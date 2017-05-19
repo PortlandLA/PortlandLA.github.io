@@ -6,7 +6,7 @@ font-size:10px;
   overflow: hidden;
 }
 .сountdown {
-  padding-left: 25rem;
+  padding-left: 30rem;
   padding-top: 10rem;
 }
 
@@ -18,7 +18,7 @@ font-size:10px;
   border-color: #90d23d;
   border-style: solid;
   width: 950px;
- min-height: 192px !important;
+  min-height: 192px !important;
   padding-top: 1.5rem;
 }
 .logo {
@@ -96,7 +96,7 @@ font-size:10px;
   font-weight: 300;
 }
 .header_icon {
-  padding-left: 20rem;
+  padding-left: 35rem;
   padding-top: 19rem;
 }
 .header_icon #icon1 {
