@@ -29,7 +29,6 @@ div {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-/** settings **/
 
 /** section_event-details **/
 .event {
@@ -187,7 +186,7 @@ div {
   background-color: white;
   z-index: 1;
   left: 23%;
-  top: 360%;
+  top: 357%;
 }
 .maps .report .addres {
   width: 294px;
@@ -218,7 +217,7 @@ div {
 }
 .non-report {
   display: none;
-} 
+}
 .maps .report .messege-form {
   display: inline-block;
   float: right;
@@ -239,7 +238,7 @@ div {
 .maps .report .messege-form input[type=email]:hover {
   border-color: #90d23d;
 }
-.maps .report .messege-form input[type=text] {
+.maps .report .messege-form textarea {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -250,9 +249,10 @@ div {
   margin-bottom: 15px;
   padding: 5px;
 }
-.maps .report .messege-form input[type=text]:hover {
+.maps .report .messege-form textarea:hover {
   border-color: #90d23d;
 }
+
 .maps .report .messege-form .send {
   border-radius: 5px;
   background-color: #373737;

@@ -60,13 +60,13 @@
   			<img src="img/Icon5.png" alt="" id="icon5">
   		</div>
   	<div class="form">
-  		<form action="#">
+  		<form action="#" id="singup">
   		<h3>Sign up for our event</h3>
-  			<input type="text" name="name" id="" placeholder="Name and Surname">
-  			<input type="email" name="email" id="" placeholder="Email">
-  			<input type="number" name="phone" id="" placeholder="Phone">
-  			<input type="text" name="username" id="" placeholder="Username">
-  			<button>Let me in!</button>
+  			<input type="text" name="name" id="name" placeholder="Name and Surname">
+  			<input type="Email" name="email" id="email" placeholder="Email">
+  			<input type="number" name="phone" id="phone" placeholder="Phone">
+  			<input type="text" name="username" id="username" placeholder="Username">
+  			<button class="btn">Let me in!</button>
   			<p>Hurry up, Limited seats availble <br>
             *we will never spam your email</p>
   		</form>
@@ -309,9 +309,9 @@ It doesn’t matter as long as you have the motivation and interest to work at t
    <p>Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
    <a href="#close" class="close">View Map</a>
  </div>
-  <form action="#" class="messege-form">
-    <input type="email" name="email" placeholder="Email"> <br>
-    <input type="text" name="messege" placeholder="Type your message"> <br>
+  <form action="thanks.html" class="messege-form" id="messege-form">
+    <input type="email" name="email" placeholder="Email" id="email-messege"> <br>
+    <textarea name="messege" id="messege" cols="54" rows="10" ></textarea> <br>
     <button class="send">Send Message</button>
   </form>
 </div>
@@ -349,9 +349,38 @@ It doesn’t matter as long as you have the motivation and interest to work at t
    <script>
    $(document).ready(function() {
       $('.close').click(function(){
-  $('.report').toggleClass('report non-report');
+  $('.report').toggleClass('report non-report');  
+  }); 
+   var btn = $('.btn');
+    btn.click(function(event){    
+    var userName = $('#name').val();
+    var userEmail = $('#email').val();
+    var userPhone = $('#phone').val();
+    var userName = $('#username').val();
+    var form = $('#singup');
+    if ( (userName !== '' &  userEmail !== '' & userPhone !== '' & userName !== '')  ) {
+      form.submit();
+    } else {
+      alert('Введите имя,email и номер');
+            event.preventDefault();        
+    }
+  
+  });
+   var btnsend = $('.send');
+    btnsend.click(function(event){    
+    var Emailmess = $('#email-messege').val();
+    var messege = $('#messege-form');
+    if ( ( Emailmess !== '')  ) {
+      messege.submit();
+    } else {
+      alert('Введите Email');
+            event.preventDefault();         
+    }
+    $('#messege-form').trigger( 'reset' );
 
   });
+    
+  
     }) ;
    </script>
   </body>
