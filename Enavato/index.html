@@ -362,11 +362,12 @@ It doesn’t matter as long as you have the motivation and interest to work at t
     var form = $('#singup');
     if ( (userName !== '' &  userEmail !== '' & userPhone !== '' & userName !== '')  ) {
       form.submit();
+      document.getElementById('#singup').reset();
     } else {
       alert('Введите имя,email и номер');
-            event.preventDefault();        
+            event.preventDefault();       
     }
-  
+  document.getElementById('#singup').reset();
   });
    var btnsend = $('.send');
     btnsend.click(function(event){        
