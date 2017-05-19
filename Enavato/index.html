@@ -314,7 +314,7 @@ It doesn’t matter as long as you have the motivation and interest to work at t
   <form action="#" onsubmit="yaCounter44692849.reachGoal('messegef')" class="messege-form" method="get" id="messege-form" >
     <input type="email" name="email" placeholder="Email" id="email-messege"> <br>
     <textarea name="messege" id="messege" cols="54" rows="10" ></textarea> <br>
-    <button class="send">Send Message</button>
+    <button class="send" tupe="submit">Send Message</button>
   </form>
 </div>
 <div class="map">
@@ -369,17 +369,18 @@ It doesn’t matter as long as you have the motivation and interest to work at t
   
   });
    var btnsend = $('.send');
-    btnsend.click(function(event){    
+    btnsend.click(function(event){ 
+    event.preventDefault();        
     var Emailmess = $('#email-messege').val();
-    var messege = $('#messege-form');
+    var messege = $('#messege');
     if ( ( Emailmess !== '')  ) {
-      messege.submit();
+      messege.submit();      
     } else {
       alert('Введите Email');                   
     }
-   
+    $('#messege-form').trigger( 'reset' );
 
-  });
+    });
     
   
     }) ;
