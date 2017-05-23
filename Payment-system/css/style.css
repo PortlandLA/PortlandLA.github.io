@@ -9,6 +9,85 @@ html {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
 }
+
+@media (max-width:768px) {
+.chair {
+position: inherit !important;  
+width: 100% !important;
+height: 600px !important;
+}
+.chair p {
+  display:none;
+}
+.open {
+ display:none !important; 
+}
+
+.info {
+  display:block !important;
+ width: 100%; 
+ text-align:left;
+ font-size:1.2rem;
+}
+.sum{
+  display:block !important;
+ float:left !important; 
+ padding-top:2rem;
+}
+.ru {
+  display:block !important;
+ float:left !important;
+ padding-top:3rem; 
+}
+.number{
+  display:block !important;
+ position:relative;
+ left:-28vh;
+ top:5vh; 
+ w100px !important;
+}
+.plus, .minus  {
+  font-size: 2rem !important;
+  border:none !important;
+  opacity: 1 !important; 
+  width: 10px !important; 
+  
+}
+.number input[type=text] {
+  display:inline !important;
+ font-size:2rem !important; 
+}
+.chair input[type=submit] {
+display:inline !important;
+position: relative;
+background-color: #f4c13b;
+width: 100px;
+height: 30px;
+border-radius: 5rem;
+border-style: solid;
+border-color: #f4c13b;
+color: #ffffff;
+font-size: 1.5rem;
+font-family: 'PT Sans', sans-serif;
+font-weight: 400;
+top:-8vh;
+left:10vh;
+
+}
+.chair-venus {
+  display: none; 
+}
+
+.line, .elips-1, .elips-2, .elips-3,
+.elips-4 {
+ display:none; 
+}
+}
+@media (width:412px)  {
+ .number{
+left:-31vh;
+ }
+}
 .line {
   position: absolute;
   top: 0;
@@ -45,6 +124,21 @@ html {
   background-color: white;
   text-align: center;
 }
+.chair input[type=text]{
+ display:none; 
+} 
+.chair input[type=submit] {
+ display:none; 
+}
+.chair .info {
+ display:none; 
+}
+.chair .ru {
+ display:none; 
+}
+.chair .number {
+ display:none; 
+}
 .chair img {
   height: 250px;
   padding-top: 2rem;
@@ -52,7 +146,7 @@ html {
 .chair h3 {
   text-align: center;
 }
-.chair a {
+.chair .open {
   border-radius: 2rem;
   border-style: solid;
   border-color: #f4c13b;
@@ -63,6 +157,12 @@ html {
   font-size: 1.5rem;
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
+}
+#open-more {
+ display:none; 
+}
+.more-info {
+ display:none; 
 }
 input[type=text] {
   border: none;
