@@ -189,8 +189,8 @@ main {
   font-size: 1.4rem;
 }
 .excellence {
-  padding-top: 20rem;
-  padding-left: 5rem;
+  padding-top: 15rem;
+  padding-left: 9rem;
 }
 .excellence .excellence-items {
   height: 300px;
@@ -264,11 +264,27 @@ main {
   font-size: 1.6rem;
 }
 .excellence img {
-  width: 58px;
+  width: auto;
   height: 55px;
   z-index: 2;
   position: relative;
 }
-.excellence .icon5 {
-  width: 42px;
+.excellence h5 {
+  color: #fe5c2e;
+  font-family: 'Museo Sans Cyrl 300';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding-top: 5rem;
+  margin-bottom: -10px;
+  margin-right: 5rem;
+}
+.excellence h3 {
+  color: #fe5c2e;
+  font-family: 'Museo Sans Cyrl 900';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.1rem;
+  margin-right: 5rem;
+  padding-bottom: 10rem;
 }
