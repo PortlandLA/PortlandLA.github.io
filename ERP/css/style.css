@@ -88,7 +88,7 @@ html {
   padding-right: 0.5rem;
   padding-bottom: 5rem;
 }
-.second-page .logo {
+.second-page .flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,12 +98,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
 }
-.second-page .logo img {
+.second-page .flex img {
   width: auto;
   height: auto;
   margin-right: 5rem;
 }
-.second-page .logo .flex-items:nth-of-type(2) {
+.second-page .flex .flex-items:nth-of-type(2) {
   padding-bottom: 5px;
 }
 .second-page .systems_about-systems {
@@ -205,6 +205,15 @@ html {
 .second-page .benefit p {
   padding-left: 5rem;
   padding-bottom: 2rem;
+}
+.second-page .benefit #showing7 {
+  display: none;
+}
+.second-page .benefit .logo {
+  padding-left: 2rem;
+}
+.second-page .benefit #logo6 {
+  display: none;
 }
 .second-page .benefit .benefit-items:hover .ball {
   background-color: #fe5c2e;
