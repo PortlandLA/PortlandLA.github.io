@@ -304,9 +304,8 @@ overflow-x: hidden;
   height: 270px;
   padding-top: 4rem;
   margin-left: 3.1rem;
-}
-.fourth-screen .phase h4 {
-  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 .fourth-screen .phase:hover {
   background-color: white;
@@ -318,6 +317,20 @@ overflow-x: hidden;
 .fourth-screen .phase:hover .phase-icon .icon,
 .fourth-screen .phase:hover .phase-icon .icon1 {
   color: white;
+}
+.fourth-screen .phase:focus {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(57, 57, 69, 0.05);
+}
+.fourth-screen .phase:focus .phase-icon {
+  background-color: #fe5c2e;
+}
+.fourth-screen .phase:focus .phase-icon .icon,
+.fourth-screen .phase:focus .phase-icon .icon1 {
+  color: white;
+}
+.fourth-screen .phase h4 {
+  text-transform: uppercase;
 }
 .fourth-screen .phase .phase-icon {
   border-radius: 50%;
@@ -354,10 +367,42 @@ overflow-x: hidden;
   font-style: normal;
   font-size: 1.5rem;
 }
-.fourth-screen .phase .steps {
+.fourth-screen .steps {
   background-color: white;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  height: 130px;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+  display: none;
 }
-.fourth-screen .phase .steps li {
-  list-style-type: none !important;
-  display: inline-block !important;
+.fourth-screen .steps .step:hover .elips {
+  border-radius: 50%;
+  background-color: #fe5c2e;
+  width: 28px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+.fourth-screen .steps .step:hover h4 {
+  color: black;
+}
+.fourth-screen .steps h4 {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #dcdcde;
+}
+.fourth-screen .steps p {
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.4rem;
 }

@@ -573,7 +573,7 @@
 <div class="row">
     <div class="phases text-center">
         <div class="row">
-            <div class="phase col-md-2 col-md-offset-1">
+            <div class="phase col-md-2 col-md-offset-1" id="phase-1">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -594,7 +594,7 @@
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2">
+        <div class="phase col-md-2" id="phase-2">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3">
                     <div class="icon1">
@@ -606,16 +606,16 @@
             
             <div class="row">
                 <div class="col-md-12">
-                    <h4>1 этап</h4>
+                    <h4>2 этап</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Предварительный</p>
+                    <p>ТЗ</p>
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2">
+        <div class="phase col-md-2" id="phase-3">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -627,16 +627,16 @@
             
             <div class="row">
                 <div class="col-md-12">
-                    <h4>1 этап</h4>
+                    <h4>3 этап</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Предварительный</p>
+                    <p>Проект</p>
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2">
+        <div class="phase col-md-2" id="phase-4">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -648,16 +648,17 @@
             
             <div class="row">
                 <div class="col-md-12">
-                    <h4>1 этап</h4>
+                    <h4>4 этап</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Предварительный</p>
+                    <p>Промышленная
+                    эксплуатация</p>
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2">
+        <div class="phase col-md-2" id="phase-5">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -669,45 +670,51 @@
             
             <div class="row">
                 <div class="col-md-12">
-                    <h4>1 этап</h4>
+                    <h4>5 этап</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p>Предварительный</p>
+                    <p>Гарантийное
+                    обслуживание</p>
                 </div>
             </div>
         </div>
-     </div>
-  <div class="row">
+     </div>  
+    </div>
+    <div class="row">
       <div class="steps">
-        <ul>
-            <li>
-                <div class="elips"></div>
-                <h4>Шaг 1</h4>
-                <p>Подготовка и согласование документации по проекту</p>
-            </li>
-            <li>
-                <div class="elips"></div>
-                <h4>Шaг 2</h4>
-                <p>Создание и передача инструкций на  рабочие места</p>
-            </li>
-            <li>
-                <div class="elips"></div>
-                <h4>Шaг 3</h4>
-                <p>Обучение сотрудников</p>
-            </li>
-            <li>
-                <div class="elips"></div>
-                <h4>Шaг 4</h4>
-                <p>Обучение службы поддержки</p>
-            </li>
-        </ul>
+       <div class="row">  
+                      <div class="col-md-3 step" >
+                      <div class="elips"></div>     
+                          <h4>Шaг 1</h4>
+                          <p id="phase-1step-p">Подготовка и согласование <br>
+                           документации по проекту</p>
+                            </div>
+
+                           <div class="col-md-3 step" >
+                               <div class="elips"></div>
+                               <h4>Шaг 2</h4>
+                               <p id="phase-2step-p">Создание и передача <br>
+                                инструкций на  рабочие места</p>
+                           </div>
+                        
+                           <div class="col-md-3 step" >
+                               <div class="elips"></div>
+                               <h4>Шaг 3</h4>
+                               <p id="phase-3step-p">Обучение сотрудников</p>
+                           </div>
+                        
+                           <div class="col-md-3 step" >
+                               <div class="elips"></div>
+                               <h4>Шaг 4</h4>
+                               <p id="phase-4step-p">Обучение службы поддержки</p>
+                           </div>
+                    </div>
       </div>
   </div>
-    </div>
+ </div>
 </div>
-    </div>
     <div class="partners">
         <div class="row">
             <div class="col-md-4">
@@ -773,6 +780,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
     <script src="js/bootstrap.min.js"></script>
     <script src="js/about-systems.js"></script>
-     
+     <script> 
+      $(document).ready(function() {
+        event.preventDefault()
+      $('#phase-1').click(function(){
+        $('.steps').show();
+       $('#phase-1step-p').text("Звонок");
+       $('#phase-2step-p').text("Консультация");
+       $('#phase-3step-p').text("Встреча");
+       $('#phase-4step-p').text("Договор");
+      });
+        $('#phase-2').click(function(){
+        $('.steps').show();
+       $('#phase-1step-p').text("Формулировка требований к автоматизации");
+       $('#phase-2step-p').text("Обследование");
+       $('#phase-3step-p').text("Обследование");
+       $('#phase-4step-p').text("Согласование ТЗ");
+      }); 
+       
+        $('#phase-3').click(function(){
+        $('.steps').show();
+       $('#phase-1step-p').text("Утверждение проектной команды");
+       $('#phase-2step-p').text("Согласование сроков/этапов работ");
+       $('#phase-3step-p').text("Исполнение этапа");
+       $('#phase-4step-p').text("Приемка этапа");
+      });
+
+       $('#phase-4').click(function(){
+        $('.steps').show();
+       $('#phase-1step-p').text("Подготовка и согласование документации по проекту");
+       $('#phase-2step-p').text("Создание и передача  инструкций на рабочие места");
+       $('#phase-3step-p').text("Обучение сотрудников");
+       $('#phase-4step-p').text("Обучение службы поддержки");
+      });
+
+       $('#phase-5').click(function(){
+        $('.steps').show();
+       $('#phase-1step-p').text("Фиксация замечаний/доп. требований");
+       $('#phase-2step-p').text("Фиксация замечаний/доп. требований");
+       $('#phase-3step-p').text("Исполненние этапа");
+       $('#phase-4step-p').text("Приемка");
+      });
+      });
+     </script>
   </body>
 </html>
