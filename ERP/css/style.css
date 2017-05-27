@@ -377,6 +377,9 @@ overflow-x: hidden;
   padding-top: 2.5rem;
   display: none;
 }
+.fourth-screen .steps .step:hover {
+  background-color: white;
+}
 .fourth-screen .steps .step:hover .elips {
   border-radius: 50%;
   background-color: #fe5c2e;
