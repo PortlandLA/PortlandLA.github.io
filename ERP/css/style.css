@@ -1,6 +1,30 @@
 html {
   font-size: 10px;
 }
+@media (max-width: 800px) {
+  /*** {
+overflow-x: hidden;	
+
+} **/
+  .systems_about-systems li {
+    display: block !important;
+    padding-bottom: 5rem;
+  }
+  .second-page h4 {
+    padding-bottom: 2rem;
+  }
+  .second-page .sol-items {
+    margin-bottom: 2rem !important;
+    margin-left: -0.8rem !important;
+  }
+  .second-page .system-erp .name-system {
+    padding-left: 5px !important;
+    padding-bottom: 1rem !important;
+  }
+  .benefit {
+    padding: 0 !important;
+  }
+}
 /** fonts **/
 .light {
   font-family: 'Museo Sans Cyrl 100';
@@ -36,11 +60,9 @@ html {
   font-size: 1.7rem;
 }
 .second-page .sol-items {
-  width: 370px;
   height: 242px;
   background: white;
   margin-bottom: 2rem;
-  margin-right: 2rem;
 }
 .second-page .sol-items img {
   width: auto;
@@ -88,38 +110,29 @@ html {
   padding-right: 0.5rem;
   padding-bottom: 5rem;
 }
-.second-page .flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+.second-page .partnership ul {
+  padding: 0;
+  text-align: center;
 }
-.second-page .flex img {
+.second-page .partnership ul li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+.second-page .logo li {
+  display: inline-block;
+  list-style-type: none;
+}
+.second-page .logo li img {
   width: auto;
   height: auto;
-  margin-right: 5rem;
-}
-.second-page .flex .flex-items:nth-of-type(2) {
-  padding-bottom: 5px;
+  margin-right: 2rem;
+  vertical-align: middle;
 }
 .second-page .systems_about-systems {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 7rem;
+}
+.second-page .systems_about-systems li {
+  display: inline-block;
 }
 .second-page .systems_about-systems a {
   border-radius: 5px;
@@ -180,7 +193,7 @@ html {
 .second-page .system-erp li:hover:before {
   color: #fe5c2e;
 }
-.second-page .system-erp li:before {
+.second-page .system-erp .showings li:before {
   padding-right: 1rem;
   content: "\f05d";
   font-family: 'FontAwesome';
@@ -221,4 +234,130 @@ html {
 .second-page .benefit #ball6,
 .second-page .benefit #benefit-items6 {
   display: none;
+}
+.third-page .why-me {
+  padding-top: 10rem;
+}
+.third-page .why-me h2 {
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.3rem;
+  padding-bottom: 4rem;
+  padding-left: 11rem;
+}
+.third-page .why-me h5 {
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.8rem;
+  padding-bottom: 4rem;
+}
+.third-page .why-me .why-me_vantage {
+  width: 300px;
+  height: 259px;
+  margin-bottom: 2rem;
+}
+.third-page .why-me .why-me_vantage:hover {
+  background-color: white;
+}
+.third-page .why-me .why-me_vantage:hover .elips {
+  border-radius: 50%;
+  background-color: #fe5c2e;
+  width: 28px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  left: 51.5%;
+  top: 15%;
+  opacity: 1;
+  z-index: 1;
+}
+.third-page .why-me .why-me_vantage img {
+  height: 38px;
+  width: auto;
+  margin-top: 4rem;
+  opacity: 0.7;
+  position: relative;
+  z-index: 2;
+}
+.third-page .why-me .why-me_vantage p {
+  padding-top: 4rem;
+  font-family: 'Museo Sans Cyrl 300';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: black;
+}
+.third-page .our-advantages {
+  color: #fe5c2e;
+  font-size: 1.8rem;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+.fourth-screen .phase {
+  width: 201px;
+  height: 270px;
+  padding-top: 4rem;
+  margin-left: 3.1rem;
+}
+.fourth-screen .phase h4 {
+  text-transform: uppercase;
+}
+.fourth-screen .phase:hover {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(57, 57, 69, 0.05);
+}
+.fourth-screen .phase:hover .phase-icon {
+  background-color: #fe5c2e;
+}
+.fourth-screen .phase:hover .phase-icon .icon,
+.fourth-screen .phase:hover .phase-icon .icon1 {
+  color: white;
+}
+.fourth-screen .phase .phase-icon {
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 0px rgba(57, 57, 69, 0.05);
+  width: 91px;
+  height: 91px;
+  position: relative;
+  left: 0.5rem;
+}
+.fourth-screen .phase .phase-icon .demo-icon {
+  font-family: "fontello";
+}
+.fourth-screen .phase .phase-icon .icon {
+  padding-top: 3rem;
+  color: #fe5c2e;
+}
+.fourth-screen .phase .phase-icon .icon1 {
+  padding-top: 3rem;
+  padding-right: 1rem;
+  color: #fe5c2e;
+}
+.fourth-screen .phase h4 {
+  padding-top: 2rem;
+  font-family: 'Museo Sans Cyrl 700';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+.fourth-screen .phase p {
+  padding-top: 0.5rem;
+  font-family: 'Museo Sans Cyrl 100';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+.fourth-screen .phase .steps {
+  background-color: white;
+}
+.fourth-screen .phase .steps li {
+  list-style-type: none !important;
+  display: inline-block !important;
 }
