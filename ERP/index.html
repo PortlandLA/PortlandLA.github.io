@@ -7,8 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
- <link href="css/style.css" rel="stylesheet">
- <link href="css/header.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
  <link href="fonts/fonts.css" rel="stylesheet">
 
     <title>ERP</title>
@@ -22,6 +21,14 @@
    
   </head>
   <body>
+  <div class="order" id="modal-order">  
+                <form action="#" class="order">
+                 <h4>Введите данные</h4>
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="email" name="email"  placeholder="Ваш Email">
+                </form>
+            </div>
+            <a href="#close" class="order-overlay"></a>
     <header class="container">
     	<div class="row">
     		<div class="col-md-2 col-md-offset-5 cont-email">
@@ -50,10 +57,10 @@
                         <ul>
                             <li><a href="#second-page">Решения и результаты</a></li>
                             <li><a href="#systems">С какими работаем</a></li>
-                            <li><a href="">Системы</a></li>
-                            <li><a href="">Почему мы</a></li>
-                            <li><a href="">Нам доверяют</a></li>
-                            <li><a href="">Что ещё</a></li>
+                            <li><a href="#systems">Системы</a></li>
+                            <li><a href="#why-me">Почему мы</a></li>
+                            <li><a href="#stage">Нам доверяют</a></li>
+                            <li><a href="#bonus">Что ещё</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,7 +68,8 @@
                 <div class="search">                
                     <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                     </div>
-                </div>
+                    <input id="input_search" type="input" value="Введите текст ...">
+                </div>                
             </div>
                 <div class="row">
             <div class="col-md-10 ">
@@ -81,7 +89,7 @@
             <div class="row">
                 <div class="col-md-3 ">
                 <div class="main-btn">
-                    <button>Заказать <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></button>
+                    <a href="#open" class="open-order">Заказать <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></a>
                 </div>
                 </div>
                 <div class="col-md-4">
@@ -107,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="photo-1"></div>
+            <div class="photo-1"></div>            
         </div>
         <div class="excellence" >
             <div class="row text-center">
@@ -464,7 +472,7 @@
         <div class="why-me">
             <div class="row">
                 <div class="col-md-11 ">
-                    <h2>Почему Вам необходимо обратиться к нам!</h2>
+                    <h2 id="why-me">Почему Вам необходимо обратиться к нам!</h2>
                 </div>
             </div>
             <div class="row">
@@ -566,14 +574,15 @@
 <div class="fourth-screen container">
     <div class="stage">
         <div class="row">
-            <div class="col-md-3 col-md-offset-5">
-                <h2>Этапы работ</h2>
+            <div class="col-md-12 text-center">
+                <h2 id="stage">Этапы работ</h2>
             </div>
         </div>
 <div class="row">
     <div class="phases text-center">
         <div class="row">
-            <div class="phase col-md-2 col-md-offset-1" id="phase-1">
+            <div class="phase  col-md-2 col-md-offset-1" tabindex="-1" id="phase-1"> 
+            <!-- tabindex на случай если нужно включить focus не для ссылок и форм -->
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -594,7 +603,7 @@
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2" id="phase-2">
+        <div class="phase col-md-2" id="phase-2" tabindex="-1">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3">
                     <div class="icon1">
@@ -615,7 +624,7 @@
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2" id="phase-3">
+        <div class="phase col-md-2" id="phase-3" tabindex="-1">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -636,7 +645,7 @@
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2" id="phase-4">
+        <div class="phase col-md-2" id="phase-4" tabindex="-1">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -658,7 +667,7 @@
                 </div>
             </div>
         </div>
-        <div class="phase col-md-2" id="phase-5">
+        <div class="phase col-md-2" id="phase-5" tabindex="-1">
             <div class="row">
                 <div class="phase-icon col-md-2 col-md-offset-3 ">
                     <div class="icon">
@@ -699,7 +708,7 @@
                                 инструкций на  рабочие места</p>
                            </div>
                         
-                           <div class="col-md-3 step" >
+                           <div class="col-md-2 step" >
                                <div class="elips"></div>
                                <h4>Шaг 3</h4>
                                <p id="phase-3step-p">Обучение сотрудников</p>
@@ -717,33 +726,48 @@
 </div>
     <div class="partners">
         <div class="row">
-            <div class="col-md-4">
-                <h2></h2>
+            <div class="col-md-12 text-center">
+                <h2>Нам доверяют</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img src="" alt=""></div>
-            <div class="col-md-2"><img src="" alt=""></div>
-            <div class="col-md-2"><img src="" alt=""></div>
-            <div class="col-md-2"><img src="" alt=""></div>
-            <div class="col-md-2"><img src="" alt=""></div>
+            <div class="col-md-2 col-md-offset-1 partners-logo">
+            <img src="logo-2/logo.png" alt="">
+            </div>
+            <div class="col-md-2 partners-logo">
+            <img src="logo-2/becema.png" alt="">
+            </div>
+            <div class="col-md-2 partners-logo">
+            <img src="logo-2/logo1.png" alt="">
+            </div>
+            <div class="col-md-2 partners-logo">
+            <img src="logo-2/logo(1).png" alt="">
+            </div>
+            <div class="col-md-2 partners-logo">
+            <img src="logo-2/logo-img.png" alt="">
+            </div>
         </div>
         <div class="additional-services">
             <div class="row">
-                <div class="col-md-6">
-                    <h3></h3>
+                <div class="col-md-7">
+                    <h3 id="bonus">Еще мы можем предложить</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <p></p>
+                <div class="col-md-4">
+                    <p>Поддержка 24/7 <br>
+               Выезд на объект заказчика в течении 3-х часов <br>
+               Мы работаем по всей России <br>
+               Полное сопровождение вашей ИТ среды</p>
                 </div>
                 <div class="col-md-3">
-                    <p></p>
+                    <p>Поставка и наладка оборудования
+                    Минимальные цены среди конкурентов
+                    Душевный разговор <i class="fa fa-smile-o" aria-hidden="true"></i></p>
                 </div>
             </div>
-        </div>
-         <!--<div class="row">
+       
+         <div class="row">
                 <div class="col-md-3 ">
                 <div class="additional-services_btn">
                     <button>Заказать <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></button>
@@ -756,71 +780,65 @@
                 </div>
             </div>
             <div class="photo-2"></div>
-    </div> -->
+       </div>
+    </div> 
 </div>
 </div>
 
 <!-- footer -->
 
-<div class="footer container">
+<footer class="container">
     <row>
-        <div class="col-md-6">
-            <p></p>
+        <div class="col-md-7 footer-adress">
+            <p>ООО «ВИДЕО ПРАВИЛА» Можайское ш 112А , работаем с учетом НДС 18%</p>
         </div>
-        <div class="col-md-2"><a href=""></a></div>
-        <div class="col-md-2">
-            <h3></h3>
+        <div class="col-md-2 footer-cont-email">
+        <a href="">info@it-rules.ru</a>
+        </div>
+        <div class="col-md-3 footer-cont-numb">
+            <h3>+7 (495) 380-37-74</h3>
         </div>
     </row>
-</div>
+</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
      <link href="css/fontello.css" rel="stylesheet">
      <link href="css/animation.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+     <link href="css/footer.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
     <script src="js/bootstrap.min.js"></script>
     <script src="js/about-systems.js"></script>
+    <script src="js/phase.js"></script>
      <script> 
+     var open= $('.open-order');
+     var order= $('.order');
+     var overlay= $('.order-overlay');
       $(document).ready(function() {
         event.preventDefault()
-      $('#phase-1').click(function(){
-        $('.steps').show();
-       $('#phase-1step-p').text("Звонок");
-       $('#phase-2step-p').text("Консультация");
-       $('#phase-3step-p').text("Встреча");
-       $('#phase-4step-p').text("Договор");
-      });
-        $('#phase-2').click(function(){
-        $('.steps').show();
-       $('#phase-1step-p').text("Формулировка требований к автоматизации");
-       $('#phase-2step-p').text("Обследование");
-       $('#phase-3step-p').text("Обследование");
-       $('#phase-4step-p').text("Согласование ТЗ");
-      }); 
-       
-        $('#phase-3').click(function(){
-        $('.steps').show();
-       $('#phase-1step-p').text("Утверждение проектной команды");
-       $('#phase-2step-p').text("Согласование сроков/этапов работ");
-       $('#phase-3step-p').text("Исполнение этапа");
-       $('#phase-4step-p').text("Приемка этапа");
-      });
-
-       $('#phase-4').click(function(){
-        $('.steps').show();
-       $('#phase-1step-p').text("Подготовка и согласование документации по проекту");
-       $('#phase-2step-p').text("Создание и передача  инструкций на рабочие места");
-       $('#phase-3step-p').text("Обучение сотрудников");
-       $('#phase-4step-p').text("Обучение службы поддержки");
-      });
-
-       $('#phase-5').click(function(){
-        $('.steps').show();
-       $('#phase-1step-p').text("Фиксация замечаний/доп. требований");
-       $('#phase-2step-p').text("Фиксация замечаний/доп. требований");
-       $('#phase-3step-p').text("Исполненние этапа");
-       $('#phase-4step-p').text("Приемка");
-      });
+        open.click(function(){
+         order.show();   
+         overlay.show();   
+        });
+        overlay.click(function(){
+         order.hide();   
+         overlay.hide();   
+        });
+        $('.search').click(function(){
+         $('#input_search').show();           
+        });       
+         $('.CRM').click(function(){
+         $('#input_search').hide();           
+        });
+          $('.photo-1').click(function(){
+         $('#input_search').hide();           
+        });
+     $('.partners').click(function(){
+        $('.steps').hide();
+       });
+       $('.why-me').click(function(){
+         $('.system-erp').hide();
+       });
       });
      </script>
   </body>
